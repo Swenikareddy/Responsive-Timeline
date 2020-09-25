@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600');
+body{
+    margin:0;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+.total{
+    display: block;
+    height: 88vh;
+    width: 31%;
+    border: 13px solid #eceaec;
+    margin: 4% 34% 1% 34%;
+}
+.head{
+    font-size: 12px;
+    padding: 8px;
+    margin-left: 15px; 
+}
+.head2{
+    margin-top: -37px;
+    margin-left: 25px;
+    font-size: 11px;
+}
+.light{
+    color: #cfcccf;
+}
+.timeline{
+    max-width: 900px;
+    margin: 0 auto;
+}  
+.timelinebody{
+    position: relative;
+    margin-left: 50px;
+}
+.timeline:before{
+    content: '';
+    position: absolute;
+    left: 42%;
+    width: 4px;
+    height: 69%;
+    background: #eceaec;
+}
+.item{
+    display: flex;
+}
+.time{
+    padding-right: 39px;
+    margin-left: -10px;
+}
+a{
+    text-decoration: none;
+    color: cornflowerblue;
+}
+.item:before{
+    content: '';
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    border: 3px solid rgb(247, 118, 118);
+    border-radius: 50%;
+    margin-top: 17px;
+    position: absolute;
+    left: 40px;
+    z-index: 9;
+}
+.col1 .item:before{
+    border: 3px solid orange;
+}
+.col2 .item:before{
+    border: 3px solid rgb(39, 248, 196);
+}
+.col3 .item:before{
+    border: 3px solid rgb(121, 180, 236);
+}
+@media (min-width:320px) and (max-width:767px){
+.total{
+    width: 70%;
+    margin: 4% 15% 1% 15%;
+    font-size: 8px;
+}
+.timeline:before{
+    content: '';
+    position: absolute;
+    left: 42%;
+}
+.item:before{
+    width: 4px;
+    height: 4px;
+    left: 30px;
+}
+}
+@media (min-width:768px) and (max-width:1023px){
+    .total{
+    width: 50%;
+    margin: 4% 25% 1% 25%;
+}
+}
+
+
+
+
+
+
